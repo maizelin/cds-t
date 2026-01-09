@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>APP1 | 居家量測數據上傳</title>
+</head>
+<body style="font-family: sans-serif; padding: 30px; background: #f4f7f6;">
+    <div style="max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <h2>居家數據 CSV 上傳</h2>
+        <p>請選擇您的量測紀錄檔案：</p>
+        <input type="file" id="csvFile" accept=".csv" style="margin-bottom: 20px;">
+        <button onclick="processUpload()" style="background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">開始同步至雲端</button>
+        <div id="log" style="margin-top: 20px; font-family: monospace; font-size: 12px; color: #666; background: #eee; padding: 10px; height: 150px; overflow-y: auto;"></div>
+    </div>
+
+    <script>
+        async function processUpload() {
+            const log = document.getElementById('log');
+            log.innerHTML += "> 正在解析 CSV 並轉換為 FHIR Bundle...<br>";
+            
+            // 這裡模擬上傳動作，請確保 CSV 內容包含 PatientID: 2892
+            setTimeout(() => {
+                log.innerHTML += "> 伺服器回應: 200 OK (Transaction Successful)<br>";
+                log.innerHTML += "> 病患 2892 數據已更新。<br>";
+                log.innerHTML += "> 請至醫師端面板查看即時診斷建議。";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

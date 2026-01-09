@@ -1,0 +1,16 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    { "id": "2892", "name": "Marquardt", "gender": "male", "birthDate": "1975-04-12" },
+    { "id": "4117", "name": "Pulido", "gender": "female", "birthDate": "1988-09-30" },
+    { "id": "4679", "name": "Armstrong", "gender": "male", "birthDate": "1962-11-05" },
+    { "id": "4836", "name": "Carter", "gender": "female", "birthDate": "1995-02-18" },
+    { "id": "4896", "name": "Klocko", "gender": "male", "birthDate": "1980-07-22" },
+    { "id": "4969", "name": "Atencio", "gender": "female", "birthDate": "1972-12-01" },
+    { "id": "6295", "name": "Considine", "gender": "male", "birthDate": "1955-03-14" },
+    { "id": "6377", "name": "Riojas", "gender": "female", "birthDate": "1983-06-25" },
+    { "id": "7241", "name": "Senger", "gender": "male", "birthDate": "1990-10-10" },
+    { "id": "7530", "name": "Rice", "gender": "female", "birthDate": "1968-08-08" }
+  ]
+}
